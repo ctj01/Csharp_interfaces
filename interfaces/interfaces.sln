@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfaces", "interfaces\interfaces.csproj", "{C40F5681-69E9-4F46-BA94-57DD7CB0C59C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IClonable", "IClonable\IClonable.csproj", "{A0EFA546-7FF0-413D-A585-FDCB59615602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C40F5681-69E9-4F46-BA94-57DD7CB0C59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C40F5681-69E9-4F46-BA94-57DD7CB0C59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C40F5681-69E9-4F46-BA94-57DD7CB0C59C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0EFA546-7FF0-413D-A585-FDCB59615602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0EFA546-7FF0-413D-A585-FDCB59615602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0EFA546-7FF0-413D-A585-FDCB59615602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0EFA546-7FF0-413D-A585-FDCB59615602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
