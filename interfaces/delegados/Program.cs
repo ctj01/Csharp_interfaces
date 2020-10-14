@@ -11,14 +11,28 @@ namespace delegados
     {
         static void Main(string[] args)
         {
-            pointer delegdo = new pointer(Csuma.suma);
-            int num = delegdo(5, 10);
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(num);
-            delegdo = new pointer(Cresta.resta);
-            num = delegdo(20, 10);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(num);
+            Crefri myrefri = new Crefri(50, -10);
+            Random rnd = new Random();
+
+            myrefri.IngresarReservas(new Crefri.Ereservas(informeKilos));
+            myrefri.Mdescongelar(new Crefri.Edescongelar(informeGrados));
+
+            while (myrefri.KilosA > 0)
+            {
+                myrefri.Trabajar(rnd.Next(1, 5));
+            }
+        }
+        public static void informeKilos(int kilos)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("==== quedan ===");
+            Console.WriteLine("hay Kilos {0}", kilos);
+        }
+        public static void informeGrados(int grados)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("====== me estoy descongelando =====");
+            Console.WriteLine("{0}", grados);
         }
     }
 }
