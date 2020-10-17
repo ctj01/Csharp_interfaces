@@ -11,12 +11,25 @@ namespace delegados
     {
         static void Main(string[] args)
         {
-            Crefri myrefri = new Crefri(50, -10);
+            Crefri myrefri = new Crefri(70, -20);
             Random rnd = new Random();
 
-            myrefri.IngresarReservas(new Crefri.Ereservas(informeKilos));
-            myrefri.Mdescongelar(new Crefri.Edescongelar(informeGrados));
+            Ereservas kilos1 = new Ereservas(informeKilos);
+            Ereservas kilos2 = new Ereservas(Ctienda.MandaViveres);
+            Edescongelar des = new Edescongelar(informeGrados);
+            myrefri.IngresarReservas(kilos1);
+            myrefri.IngresarReservas(kilos2);
+            myrefri.Mdescongelar(des);
 
+            while (myrefri.KilosA > 0)
+            {
+                myrefri.Trabajar(rnd.Next(1, 5));
+            }
+            
+            myrefri.EliminarReserva(kilos2);
+            myrefri.KilosA = 50;
+            myrefri.GradosA = -20;
+            
             while (myrefri.KilosA > 0)
             {
                 myrefri.Trabajar(rnd.Next(1, 5));

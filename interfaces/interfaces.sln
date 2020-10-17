@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Callback", "Callback\Callba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegados", "delegados\delegados.csproj", "{92D84172-AC69-49F3-8A56-7C8EA2EE2E43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializacion", "Serializacion\Serializacion.csproj", "{D262104F-274C-443F-ABAC-1B76D76E7318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{92D84172-AC69-49F3-8A56-7C8EA2EE2E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92D84172-AC69-49F3-8A56-7C8EA2EE2E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92D84172-AC69-49F3-8A56-7C8EA2EE2E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D262104F-274C-443F-ABAC-1B76D76E7318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D262104F-274C-443F-ABAC-1B76D76E7318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D262104F-274C-443F-ABAC-1B76D76E7318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D262104F-274C-443F-ABAC-1B76D76E7318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

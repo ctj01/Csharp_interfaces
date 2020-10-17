@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace delegados
 {
+     delegate void Ereservas(int Ekilos);
+     delegate void Edescongelar(int Egrados);
     class Crefri
     {
-        public delegate void Ereservas(int Ekilos);
-        public delegate void Edescongelar(int Egrados);
         private int kilosA =  0;
         private int gradosA = 0;
         private Ereservas Delreservas;
@@ -24,11 +24,15 @@ namespace delegados
         }
         public void IngresarReservas(Ereservas pReservas)
         {
-            Delreservas = pReservas;
+            Delreservas += pReservas;
+        }
+        public void EliminarReserva(Ereservas pReservas)
+        {
+            Delreservas -= pReservas;
         }
         public void Mdescongelar(Edescongelar pDescongelar)
         {
-            Deldescongelar = pDescongelar;
+            Deldescongelar += pDescongelar;
         }
         public void Trabajar(int Pconsumo)
         {
@@ -40,7 +44,7 @@ namespace delegados
             if (kilosA < 10)
                 Delreservas(kilosA);
             
-            if ( gradosA >= 0)
+            if ( gradosA > 0)
             {
                 Deldescongelar(gradosA);
             }

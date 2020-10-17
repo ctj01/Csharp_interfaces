@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92D84172-AC69-49F3-8A56-7C8EA2EE2E43}</ProjectGuid>
+    <ProjectGuid>{D262104F-274C-443F-ABAC-1B76D76E7318}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>delegados</RootNamespace>
-    <AssemblyName>delegados</AssemblyName>
+    <RootNamespace>Serializacion</RootNamespace>
+    <AssemblyName>Serializacion</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Crefri.cs" />
-    <Compile Include="Cresta.cs" />
-    <Compile Include="Csuma.cs" />
-    <Compile Include="Ctienda.cs" />
+    <Compile Include="CAuto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
